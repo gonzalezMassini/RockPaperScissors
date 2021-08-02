@@ -1,0 +1,42 @@
+.paper {
+  position: absolute;
+  left: 20em;
+  top: 13em;
+  background-color: white;
+  border-radius: 1em;
+  padding: 0.75em;
+  border: solid;
+  border-width: 1em;
+  border-color: blue;
+}
+.scissors {
+  position: absolute;
+  background-color: white;
+  border-radius: 1em;
+  padding: 0.75em;
+  top: 13em;
+  left: 35em;
+  border: solid;
+  border-width: 1em;
+  border-color: yellow;
+}
+.rock {
+  position: absolute;
+  bottom: 23em;
+  left: 28em;
+  background-color: white;
+  border-radius: 1em;
+  padding: 0.75em;
+  border: solid;
+  border-width: 1em;
+  border-color: red;
+}
+.rock:hover {
+  cursor: pointer;
+}
+.scissors:hover {
+  cursor: pointer;
+}
+.paper:hover {
+  cursor: pointer;
+}

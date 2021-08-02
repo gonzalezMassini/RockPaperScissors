@@ -1,4 +1,26 @@
 .app {
   background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rulesBtn {
+  position: absolute;
+  bottom: 2em;
+  right: 2em;
+  border: solid;
+  border-color: hsl(217, 16%, 45%);
+  height: 1.75em;
+  width: 6em;
+  border-radius: 5px;
+  border-width: 0.15em;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rulesBtn:hover {
+  cursor: pointer;
+  background-color: hsla(217, 16%, 45%, 0.247);
 }
