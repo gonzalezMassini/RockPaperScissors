@@ -1,35 +1,42 @@
+.container {
+  background-image: url('../../../assets/images/bg-triangle.svg');
+  height: 17em;
+  width: 20em;
+}
+
 .paper {
-  position: absolute;
-  left: 20em;
-  top: 13em;
   background-color: white;
   border-radius: 1em;
   padding: 0.75em;
   border: solid;
   border-width: 1em;
   border-color: blue;
+  position: relative;
+  left: 1em;
+  bottom: 3em;
 }
+
 .scissors {
-  position: absolute;
   background-color: white;
   border-radius: 1em;
   padding: 0.75em;
-  top: 13em;
-  left: 35em;
   border: solid;
   border-width: 1em;
   border-color: yellow;
+  position: relative;
+  top: 13em;
 }
 .rock {
-  position: absolute;
-  bottom: 23em;
-  left: 28em;
   background-color: white;
+
   border-radius: 1em;
   padding: 0.75em;
   border: solid;
   border-width: 1em;
   border-color: red;
+  position: relative;
+  right: 1em;
+  bottom: 3em;
 }
 .rock:hover {
   cursor: pointer;

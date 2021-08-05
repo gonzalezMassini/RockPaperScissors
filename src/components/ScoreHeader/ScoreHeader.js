@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './ScoreHeader.module.css';
 import { ReactComponent as Title } from '../../assets/images/logo.svg';
-const ScoreHeader = () => {
+const ScoreHeader = ({ score }) => {
   return (
     <div className={styles.container}>
       <div className={styles.gameName}>
@@ -9,7 +9,7 @@ const ScoreHeader = () => {
       </div>
       <div className={styles.score}>
         <p className={styles.scoreTitle}> Score</p>
-        <p className={styles.scoreNumber}>0</p>
+        <p className={styles.scoreNumber}>{score}</p>
       </div>
     </div>
   );

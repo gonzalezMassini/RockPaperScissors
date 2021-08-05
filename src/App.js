@@ -6,14 +6,15 @@ import { useState } from 'react';
 
 function App() {
   const [rules, setRules] = useState(false);
+  const [score, setScore] = useState(0);
   const rulesToggle = () => {
     setRules((prev) => !prev);
   };
   return (
     <div className={styles.app}>
-      <ScoreHeader />
+      <ScoreHeader score={score} />
 
-      {rules ? <Rules /> : <Game />}
+      {rules ? <Rules /> : <Game score={score} setScore={setScore} />}
       <div className={styles.rulesBtn} onClick={() => rulesToggle()}>
         Rules
       </div>

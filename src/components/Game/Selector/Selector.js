@@ -3,14 +3,16 @@ import styles from './Selector.module.css';
 import { ReactComponent as Rock } from '../../../assets/images/icon-rock.svg';
 import { ReactComponent as Scissors } from '../../../assets/images/icon-scissors.svg';
 import { ReactComponent as Paper } from '../../../assets/images/icon-paper.svg';
-import { ReactComponent as Triangle } from '../../../assets/images/bg-triangle.svg';
-const Selector = () => {
+
+const Selector = ({ playResult }) => {
   return (
     <div className={styles.container}>
-      <Triangle />
-      <Rock className={styles.rock} />
-      <Scissors className={styles.scissors} />
-      <Paper className={styles.paper} />
+      <Rock className={styles.rock} onClick={() => playResult('rock')} />
+      <Scissors
+        className={styles.scissors}
+        onClick={() => playResult('scissors')}
+      />
+      <Paper className={styles.paper} onClick={() => playResult('paper')} />
     </div>
   );
 };
